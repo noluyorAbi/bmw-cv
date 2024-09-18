@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+    --background: #0a0a0a;
+    --foreground: #ededed;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -23,5 +23,28 @@ body {
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+
+/* Custom utilities */
+@layer utilities {
+  @media (min-width: 768px) {
+    .carousel-mask {
+      mask-image: linear-gradient(
+        to right,
+        transparent,
+        black 10%,
+        black 90%,
+        transparent
+      );
+      -webkit-mask-image: linear-gradient(
+        to right,
+        transparent,
+        black 10%,
+        black 90%,
+        transparent
+      );
+    }
   }
 }
