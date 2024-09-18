@@ -15,7 +15,8 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "Alperen Adatepe - Werkstudent IT Kommunikation",
-  description: "Erfahren Sie, wie ich IT-Kommunikation verständlich und zugänglich mache. Dise Seite wurde von Alperen Adatepe für die Stelle Werkstudent IT Kommunikation bei der BMW Group erstellt.",
+  description:
+    "Erfahren Sie, wie ich IT-Kommunikation verständlich und zugänglich mache. Dise Seite wurde von Alperen Adatepe für die Stelle Werkstudent IT Kommunikation bei der BMW Group erstellt.",
 };
 
 export default function RootLayout({

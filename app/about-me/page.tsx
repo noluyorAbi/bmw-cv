@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import React from "react";
 import { Carousel, Card } from "../components/ui/apple-cards-carousel";
 import { motion } from "framer-motion";
@@ -40,38 +39,118 @@ export default function AppleCardsCarouselDemo() {
 
 const DummyContent = () => {
   return (
-    <>
-      {[...Array(3)].map((_, index) => (
-        <div
-          key={"dummy-content" + index}
-          className="mb-4 rounded-3xl bg-[#F5F5F7] p-4 md:p-14 dark:bg-neutral-800"
-        >
-          <p className="mx-auto max-w-3xl font-sans text-base text-neutral-600 md:text-2xl dark:text-neutral-400">
-            <span className="font-bold text-neutral-700 dark:text-neutral-200">
-              The first rule of Apple club is that you boast about Apple club.
+    <div
+      key={"myuninotes-content"}
+      className="mb-4 rounded-3xl bg-[#F5F5F7] p-4 md:p-14 dark:bg-neutral-800 text-balance text-left"
+    >
+      <p className="mx-auto max-w-3xl font-sans text-base text-neutral-600 md:text-2xl dark:text-neutral-400">
+        <span className="font-helvetia text-neutral-700 dark:text-neutral-200">
+          Meine erste Webseite:{" "}
+          <a
+            href="https://hustle-swt.vercel.app/"
+            className="text-blue-500 underline hover:text-blue-700"
+          >
+            hustle-swt
+          </a>
+        </span>{" "}
+        <ul className="list-disc ml-5 font-helvetia text-pretty *:mt-2">
+          <li>
+            <span className="text-neutral-700 dark:text-neutral-200 font-bold">
+              Erstellung:
             </span>{" "}
-            Keep a journal, quickly jot down a grocery list, and take amazing
-            class notes. Want to convert those notes to text? No problem.
-            Langotiya jeetu ka mara hua yaar is ready to capture every thought.
-          </p>
-          <Image
-            src="https://assets.aceternity.com/macbook.png"
-            alt="Macbook mockup from Aceternity UI"
-            height={500}
-            width={500}
-            className="mx-auto h-full w-full object-contain md:h-1/2 md:w-1/2"
+            Während meines Informatikstudiums
+          </li>
+          <li>
+            <span className="text-neutral-700 dark:text-neutral-200 font-bold">
+              Ziel:
+            </span>{" "}
+            Lösungen, Erklärungen und Notizen für Softwaretechnik in
+            ansprechender und kreativer Form für Komillitonen bereitstellen
+          </li>
+          <li>
+            <span className="text-neutral-700 dark:text-neutral-200 font-bold">
+              Verfügbarkeit:
+            </span>{" "}
+            Online-Zugriff von überall auf komplexe IT-Themen für Studierende
+            ermöglichen
+          </li>
+          <li>
+            <span className="text-neutral-700 dark:text-neutral-200 font-bold">
+              Unterstützung:
+            </span>{" "}
+            Lernprozess meiner Kommilitonen erleichtern
+          </li>
+          <li>
+            <span className="text-neutral-700 dark:text-neutral-200 font-bold">
+              Relevanz für BMW Group:
+            </span>{" "}
+            Fähigkeit, IT-Themen klar und verständlich zu vermitteln
+          </li>
+          <li>
+            <span className="text-neutral-700 dark:text-neutral-200 font-bold">
+              Motivation:
+            </span>{" "}
+            Leidenschaft für Wissensvermittlung und Schaffung leicht
+            zugänglicher Plattformen
+          </li>
+          <li>
+            <span className="text-neutral-700 dark:text-neutral-200 font-bold">
+              Technologien:
+            </span>{" "}
+            Next.js, React, TypeScript, TailwindCSS und DaisyUI
+          </li>
+        </ul>
+      </p>
+
+      <div className="carousel w-full rounded-xl mt-8">
+        <div id="item1" className="carousel-item w-full">
+          <img
+            src="hustle-swt.vercel.app_(HighRes Screenshot).png"
+            className="w-full"
           />
         </div>
-      ))}
-    </>
+        <div id="item2" className="carousel-item w-full">
+          <img
+            src="hustle-swt.vercel.app_(HighRes Screenshot)(1).png"
+            className="w-full"
+          />
+        </div>
+        <div id="item3" className="carousel-item w-full">
+          <img
+            src="hustle-swt.vercel.app_(HighRes Screenshot) (2).png"
+            className="w-full"
+          />
+        </div>
+        <div id="item4" className="carousel-item w-full">
+          <img
+            src="hustle-swt.vercel.app_(HighRes Screenshot) (3).png"
+            className="w-full"
+          />
+        </div>
+      </div>
+      <div className="flex w-full justify-center gap-2 py-2">
+        <a href="#item1" className="btn btn-xs">
+          1
+        </a>
+        <a href="#item2" className="btn btn-xs">
+          2
+        </a>
+        <a href="#item3" className="btn btn-xs">
+          3
+        </a>
+        <a href="#item4" className="btn btn-xs">
+          4
+        </a>
+      </div>
+    </div>
   );
 };
 
 const data = [
   {
-    category: "Artificial Intelligence",
-    title: "You can do more with AI.",
-    src: "https://images.unsplash.com/photo-1593508512255-86ab42a8e620?q=80&w=3556&auto=format&fit=crop&ixlib=rb-4.0.3",
+    category: "Der Beginn",
+    title: "Meine erste Webseite zum Thema IT-Kommunikation",
+    src: "https://i.postimg.cc/xYbTJgxH/hustle-sw-t-vercel-app-High-Res-Screenshot.png",
     content: <DummyContent />,
   },
   {

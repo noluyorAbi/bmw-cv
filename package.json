@@ -6,16 +6,22 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "format": "pnpm exec prettier . --write"
   },
   "dependencies": {
     "@tabler/icons-react": "^3.17.0",
     "autoprefixer": "^10.4.20",
+    "bootstrap": "^5.3.3",
     "clsx": "^2.1.1",
+    "embla-carousel": "^8.3.0",
+    "embla-carousel-react": "^8.3.0",
+    "flowbite-react": "^0.10.1",
     "framer-motion": "^11.5.4",
     "mini-svg-data-uri": "^1.4.4",
     "next": "14.2.12",
     "react": "^18",
+    "react-bootstrap": "^2.10.4",
     "react-dom": "^18",
     "tailwind-merge": "^2.5.2"
   },
@@ -23,9 +29,11 @@
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "daisyui": "^4.12.10",
     "eslint": "^8",
     "eslint-config-next": "14.2.12",
     "postcss": "^8",
+    "prettier": "3.3.3",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
   }

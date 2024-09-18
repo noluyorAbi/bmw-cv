@@ -59,13 +59,13 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
 
   const scrollLeft = () => {
     if (carouselRef.current) {
-      carouselRef.current.scrollBy({ left: -300, behavior: "smooth" });
+      carouselRef.current.scrollBy({ left: -700, behavior: "smooth" });
     }
   };
 
   const scrollRight = () => {
     if (carouselRef.current) {
-      carouselRef.current.scrollBy({ left: 300, behavior: "smooth" });
+      carouselRef.current.scrollBy({ left: 700, behavior: "smooth" });
     }
   };
 
@@ -74,7 +74,7 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
       const cardWidth =
         window.innerWidth < 768 ? carouselRef.current.clientWidth : 384; // Adjusted for mobile
       const gap = window.innerWidth < 768 ? 16 : 32; // Responsive gap
-      const scrollPosition = (cardWidth + gap) * index;
+      const scrollPosition = (cardWidth + gap + 350) * index;
       carouselRef.current.scrollTo({
         left: scrollPosition,
         behavior: "smooth",
@@ -89,7 +89,7 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
     >
       <div className="relative w-full max-w-screen-xl mx-auto">
         <div
-          className="flex w-full overflow-hidden py-10 md:py-20"
+          className="flex w-full overflow-hidden py- md:py-20"
           ref={carouselRef}
           onScroll={checkScrollability}
         >
@@ -121,18 +121,18 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
         {/* Hide scroll buttons on mobile */}
         <div className="mr-10 flex justify-end gap-2 hidden md:flex">
           <button
-            className="relative z-40 flex h-10 w-10 items-center justify-center rounded-full bg-gray-100 disabled:opacity-50"
+            className="relative z-40 flex h-10 w-10 items-center justify-center rounded-full bg-gray-600 dark:bg-gray-100 disabled:opacity-50 hover:bg-gray-900 dark:hover:bg-gray-300"
             onClick={scrollLeft}
             disabled={!canScrollLeft}
           >
-            <IconArrowNarrowLeft className="h-6 w-6 text-gray-500" />
+            <IconArrowNarrowLeft className="h-6 w-6 text-white dark:text-black" />
           </button>
           <button
-            className="relative z-40 flex h-10 w-10 items-center justify-center rounded-full bg-gray-100 disabled:opacity-50"
+            className="relative z-40 flex h-10 w-10 items-center justify-center rounded-full bg-gray-600 dark:bg-gray-100 disabled:opacity-50 hover:bg-gray-900 dark:hover:bg-gray-300"
             onClick={scrollRight}
             disabled={!canScrollRight}
           >
-            <IconArrowNarrowRight className="h-6 w-6 text-gray-500" />
+            <IconArrowNarrowRight className="h-6 w-6 text-white dark:text-black" />
           </button>
         </div>
       </div>
@@ -198,7 +198,7 @@ export const Card = ({
               exit={{ opacity: 0 }}
               ref={containerRef}
               layoutId={layout ? `card-${card.title}` : undefined}
-              className="relative z-[60] mx-auto my-10 h-fit max-w-5xl rounded-3xl bg-white p-4 font-sans md:p-10 dark:bg-neutral-900"
+              className="relative z-[60] mx-auto my-10 h-fit max-w-5xl rounded-3xl bg-white p-4 font-sans md:p-10 dark:bg-neutral-900 "
             >
               <button
                 className="sticky right-0 top-4 ml-auto flex h-8 w-8 items-center justify-center rounded-full bg-black dark:bg-white"
@@ -228,8 +228,8 @@ export const Card = ({
         onClick={handleOpen}
         className="relative z-10 flex h-80 w-full md:w-96 flex-col items-start justify-start overflow-hidden rounded-3xl bg-gray-100 md:h-[40rem] dark:bg-neutral-900"
       >
-        <div className="pointer-events-none absolute inset-x-0 top-0 z-30 h-full bg-gradient-to-b from-black/50 via-transparent to-transparent" />
-        <div className="relative z-40 p-4 md:p-8">
+        <div className="pointer-events-none absolute inset-x-0 top-0 z-30 h-full   bg-gradient-to-r from-transparent from-60% to-black  dark:to-black " />
+        <div className="relative z-40 p-4 md:p-8   bg-gradient-to-b from-black to-transparent">
           <motion.p
             layoutId={layout ? `category-${card.category}` : undefined}
             className="text-left font-sans text-sm font-medium text-white md:text-base"
@@ -282,5 +282,3 @@ export const BlurImage = ({
     />
   );
 };
-
-
