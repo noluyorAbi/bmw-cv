@@ -77,7 +77,7 @@ const HustleSWT = () => {
             <span className="text-neutral-700 dark:text-neutral-200 font-bold">
               Erstellung:
             </span>{" "}
-            Während meines Informatikstudiums (3.Semeseter)
+            Während meines Informatikstudiums (3.Semester)
           </li>
           <li className="mb-2 sm:mb-3 lg:mb-4">
             <span className="text-neutral-700 dark:text-neutral-200 font-bold">
@@ -90,7 +90,7 @@ const HustleSWT = () => {
             <span className="text-neutral-700 dark:text-neutral-200 font-bold">
               Verfügbarkeit:
             </span>{" "}
-            Online-Zugriff von überall und jedem Gerät aus durch responsivem
+            Online-Zugriff von überall und jedem Gerät aus durch responsives
             Design
           </li>
           <li className="mb-2 sm:mb-3 lg:mb-4">
@@ -134,7 +134,7 @@ const HustleSWT = () => {
       </p>
 
       <div className=" w-full rounded-xl my-4">
-        <img src="hustleswt-ana;ytics.png" className="w-full rounded-xl" />
+        <img src="hustleswt-analytics.png" className="w-full rounded-xl" />
       </div>
 
       <div className="spect-square">
@@ -936,7 +936,7 @@ const data = [
     content: <MyUniNotes />,
   },
   {
-    category: "Weniger Text, mehr Kommunikation",
+    category: "Weniger Text, mehr Visualisierung",
     title: "Eine PowerPoint mit modernem Design und Animationen",
     src: "/powerpoint.png",
     content: <Powerpoint />,
