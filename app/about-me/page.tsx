@@ -188,8 +188,6 @@ const HustleSWT = () => {
 };
 
 const MyUniNotes = () => {
-  const videoRef = useRef<HTMLVideoElement>(null); // Neues Ref für Video
-
   return (
     <div
       key={"myuninotes-content"}
@@ -312,7 +310,6 @@ const MyUniNotes = () => {
 };
 
 const Powerpoint = () => {
-  const videoRef = useRef<HTMLVideoElement>(null); // Neues Ref für Video
 
   return (
     <div
