@@ -874,7 +874,7 @@ const data = [
   {
     category: "Berufserfahrung",
     title: "Hands-on Erfahrung als Entwickler und Nachhilfelehrer",
-    src: "/berufserfahrung.png",
+    src: "/Berufserfahrung.png",
     content: <Berufserfahrung />,
   },
   {
