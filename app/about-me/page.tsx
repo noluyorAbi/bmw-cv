@@ -114,12 +114,28 @@ const HustleSWT = () => {
           </li>
           <li className="mb-2 sm:mb-3 lg:mb-4">
             <span className="text-neutral-700 dark:text-neutral-200 font-bold">
+              Statistiken:
+            </span>{" "}
+            Mit kontinuierlich verbessertem Inhalt und einer durchdachten
+            Struktur zeigt die Seite beeindruckende Zahlen: 489 aktive Nutzer,
+            9.995 Ereignisse und eine durchschnittliche Verweildauer von über 5
+            Minuten pro Besuch. Interessant ist dabei auch das Nutzerverhalten,
+            das klar aufzeigt, wann die Studierenden mit dem Lernen für das
+            Modul und die Klausuren beginnen und wann das Semester zu Ende geht.
+          </li>
+
+          <li className="mb-2 sm:mb-3 lg:mb-4">
+            <span className="text-neutral-700 dark:text-neutral-200 font-bold">
               Technologien:
             </span>{" "}
             Next.js, React, TypeScript, TailwindCSS und DaisyUI
           </li>
         </ul>
       </p>
+
+      <div className=" w-full rounded-xl my-4">
+        <img src="hustleswt-ana;ytics.png" className="w-full rounded-xl" />
+      </div>
 
       <div className="spect-square">
         <video
@@ -310,7 +326,6 @@ const MyUniNotes = () => {
 };
 
 const Powerpoint = () => {
-
   return (
     <div
       key={"powerpoint-content"}
@@ -439,8 +454,8 @@ const Berufserfahrung = () => {
               <span className="text-neutral-700 dark:text-neutral-200 font-bold">
                 Zeitraum:
               </span>{" "}
-              Von April 2023 bis April 2024 war ich als Junior Software Developer
-              tätig und habe 20 Stunden pro Woche gearbeitet.
+              Von April 2023 bis April 2024 war ich als Junior Software
+              Developer tätig und habe 20 Stunden pro Woche gearbeitet.
             </li>
             <li className="mb-2 sm:mb-3 lg:mb-4">
               <span className="text-neutral-700 dark:text-neutral-200 font-bold">
@@ -592,116 +607,137 @@ const Berufserfahrung = () => {
 const Studium = () => {
   return (
     <>
-    <div
-      key={"studium-content"}
-      className="mb-4 rounded-3xl bg-[#F5F5F7] p-4 md:p-14 dark:bg-neutral-800 text-balance text-left"
-    >
-      <p className="mx-auto max-w-3xl font-sans text-base text-neutral-600 md:text-2xl dark:text-neutral-400">
-        <span className="font-helvetia text-neutral-700 dark:text-neutral-200">
-          Mein Studium: Informatik mit integriertem Anwendungsfach Statistik
-        </span>{" "}
-        <ul className="list-disc ml-5 sm:ml-8 lg:ml-10 font-helvetia text-pretty *:mt-2">
-          <li className="mb-2 sm:mb-3 lg:mb-4">
-            <span className="text-neutral-700 dark:text-neutral-200 font-bold">
-              Studiengang:
-            </span>{" "}
-            Ich studiere seit 2022 an der Ludwig-Maximilians-Universität München im Fachbereich Informatik mit integriertem Anwendungsfach Statistik.
-          </li>
-          <li className="mb-2 sm:mb-3 lg:mb-4">
-            <span className="text-neutral-700 dark:text-neutral-200 font-bold">
-              Semester und ECTS:
-            </span>{" "}
-            Ich habe das 4. Semester im Sommersemester 2024 erfolgreich abgeschlossen und gehe mit voraussichtlich 120 ECTS in mein 5. Semester.
-          </li>
-          <li className="mb-2 sm:mb-3 lg:mb-4">
-            <span className="text-neutral-700 dark:text-neutral-200 font-bold">
-              Aktueller Notenschnitt:
-            </span>{" "}
-            Mein aktueller Notenschnitt liegt bei 2.26.
-          </li>
-          <li className="mb-2 sm:mb-3 lg:mb-4">
-            <span className="text-neutral-700 dark:text-neutral-200 font-bold">
-              Schwerpunkt:
-            </span>{" "}
-            Mein Studium kombiniert die theoretischen Grundlagen der Informatik mit der praktischen Anwendung statistischer Methoden. Diese interdisziplinäre Ausbildung ermöglicht es mir, datenbasierte Entscheidungen zu treffen und komplexe IT-Probleme analytisch anzugehen.
-          </li>
-          <li className="mb-2 sm:mb-3 lg:mb-4">
-            <span className="text-neutral-700 dark:text-neutral-200 font-bold">
-              Praktische Anwendungen:
-            </span>{" "}
-            In verschiedenen Projekten konnte ich sowohl Algorithmen als auch statistische Methoden anwenden. So habe ich unter anderem rekursive Traversal-Methoden für Binärbäume entwickelt und tiefere Einblicke in die Datenanalyse gewonnen.
-          </li>
-          <li className="mb-2 sm:mb-3 lg:mb-4">
-            <span className="text-neutral-700 dark:text-neutral-200 font-bold">
-              Zukunftsziel:
-            </span>{" "}
-            Nach meinem Bachelor habe ich fest vor, meinen Master in Informatik zu machen, um mein Wissen weiter zu vertiefen und mich auf spezialisierte IT-Bereiche zu fokussieren.
-          </li>
-        </ul>
-      </p>
-    </div>
-    
-{/* openAIScientist Projekt */}
-<div
-      key={"openaiscientist-content"}
-      className="mb-4 rounded-3xl bg-[#F5F5F7] p-4 md:p-14 dark:bg-neutral-800 text-balance text-left"
-    >
-      <p className="mx-auto max-w-3xl font-sans text-base text-neutral-600 md:text-2xl dark:text-neutral-400">
-        <span className="font-helvetia text-neutral-700 dark:text-neutral-200">
-          Projekt im Studium: openAIScientist - KI-gestützte wissenschaftliche Analysen
-        </span>{" "}
-        <ul className="list-disc ml-5 sm:ml-8 lg:ml-10 font-helvetia text-pretty *:mt-2">
-          <li className="mb-2 sm:mb-3 lg:mb-4">
-            <span className="text-neutral-700 dark:text-neutral-200 font-bold">
-              Projektbeschreibung:
-            </span>{" "}
-            openAIScientist ist ein Projekt, das ich im Rahmen meines Studiums entwickelt habe. Es handelt sich um ein R-Paket, das mithilfe der OpenAI-API wissenschaftliche Analysen und Visualisierungen erstellt und diese im Markdown-Format ausgibt.
-          </li>
-          <li className="mb-2 sm:mb-3 lg:mb-4">
-            <span className="text-neutral-700 dark:text-neutral-200 font-bold">
-              Funktionen:
-            </span>{" "}
-            Das Projekt beinhaltet die automatische Generierung von wissenschaftlichen Analysen und Visualisierungen basierend auf Datensätzen, was den wissenschaftlichen Arbeitsprozess enorm erleichtert.
-          </li>
-          <li className="mb-2 sm:mb-3 lg:mb-4">
-            <span className="text-neutral-700 dark:text-neutral-200 font-bold">
-              Verwendete Technologien:
-            </span>{" "}
-            Das Projekt nutzt R, OpenAI API, httr und readr, um Datenanalyse und API-Integration zu ermöglichen. Besonders wichtig ist die sichere Handhabung von API-Schlüsseln über Umgebungsvariablen.
-          </li>
-          <li className="mb-2 sm:mb-3 lg:mb-4">
-            <span className="text-neutral-700 dark:text-neutral-200 font-bold">
-              Relevanz für IT-Kommunikation:
-            </span>{" "}
-            Durch dieses Projekt habe ich gelernt, wie man technische und datenbasierte Inhalte klar und verständlich präsentiert. Diese Fähigkeit ist besonders nützlich in der Kommunikation von IT-Themen an Fachfremde.
-          </li>
-          <li className="mb-2 sm:mb-3 lg:mb-4">
-            <span className="text-neutral-700 dark:text-neutral-200 font-bold">
-              Repository:
-            </span>{" "}
-            Der Quellcode des Projekts ist auf GitHub verfügbar unter{" "}
-            <a
-              href="https://github.com/noluyorAbi/openAIScientist"
-              className="text-blue-500 underline hover:text-blue-700"
-            >
-              openAIScientist GitHub-Repository
-            </a>.
-          </li>
-        </ul>
-      </p>
-    </div>
+      <div
+        key={"studium-content"}
+        className="mb-4 rounded-3xl bg-[#F5F5F7] p-4 md:p-14 dark:bg-neutral-800 text-balance text-left"
+      >
+        <p className="mx-auto max-w-3xl font-sans text-base text-neutral-600 md:text-2xl dark:text-neutral-400">
+          <span className="font-helvetia text-neutral-700 dark:text-neutral-200">
+            Mein Studium: Informatik mit integriertem Anwendungsfach Statistik
+          </span>{" "}
+          <ul className="list-disc ml-5 sm:ml-8 lg:ml-10 font-helvetia text-pretty *:mt-2">
+            <li className="mb-2 sm:mb-3 lg:mb-4">
+              <span className="text-neutral-700 dark:text-neutral-200 font-bold">
+                Studiengang:
+              </span>{" "}
+              Ich studiere seit 2022 an der Ludwig-Maximilians-Universität
+              München im Fachbereich Informatik mit integriertem Anwendungsfach
+              Statistik.
+            </li>
+            <li className="mb-2 sm:mb-3 lg:mb-4">
+              <span className="text-neutral-700 dark:text-neutral-200 font-bold">
+                Semester und ECTS:
+              </span>{" "}
+              Ich habe das 4. Semester im Sommersemester 2024 erfolgreich
+              abgeschlossen und gehe mit voraussichtlich 120 ECTS in mein 5.
+              Semester.
+            </li>
+            <li className="mb-2 sm:mb-3 lg:mb-4">
+              <span className="text-neutral-700 dark:text-neutral-200 font-bold">
+                Aktueller Notenschnitt:
+              </span>{" "}
+              Mein aktueller Notenschnitt liegt bei 2.26.
+            </li>
+            <li className="mb-2 sm:mb-3 lg:mb-4">
+              <span className="text-neutral-700 dark:text-neutral-200 font-bold">
+                Schwerpunkt:
+              </span>{" "}
+              Mein Studium kombiniert die theoretischen Grundlagen der
+              Informatik mit der praktischen Anwendung statistischer Methoden.
+              Diese interdisziplinäre Ausbildung ermöglicht es mir,
+              datenbasierte Entscheidungen zu treffen und komplexe IT-Probleme
+              analytisch anzugehen.
+            </li>
+            <li className="mb-2 sm:mb-3 lg:mb-4">
+              <span className="text-neutral-700 dark:text-neutral-200 font-bold">
+                Praktische Anwendungen:
+              </span>{" "}
+              In verschiedenen Projekten konnte ich sowohl Algorithmen als auch
+              statistische Methoden anwenden. So habe ich unter anderem
+              rekursive Traversal-Methoden für Binärbäume entwickelt und tiefere
+              Einblicke in die Datenanalyse gewonnen.
+            </li>
+            <li className="mb-2 sm:mb-3 lg:mb-4">
+              <span className="text-neutral-700 dark:text-neutral-200 font-bold">
+                Zukunftsziel:
+              </span>{" "}
+              Nach meinem Bachelor habe ich fest vor, meinen Master in
+              Informatik zu machen, um mein Wissen weiter zu vertiefen und mich
+              auf spezialisierte IT-Bereiche zu fokussieren.
+            </li>
+          </ul>
+        </p>
+      </div>
 
+      {/* openAIScientist Projekt */}
+      <div
+        key={"openaiscientist-content"}
+        className="mb-4 rounded-3xl bg-[#F5F5F7] p-4 md:p-14 dark:bg-neutral-800 text-balance text-left"
+      >
+        <p className="mx-auto max-w-3xl font-sans text-base text-neutral-600 md:text-2xl dark:text-neutral-400">
+          <span className="font-helvetia text-neutral-700 dark:text-neutral-200">
+            Projekt im Studium: openAIScientist - KI-gestützte wissenschaftliche
+            Analysen
+          </span>{" "}
+          <ul className="list-disc ml-5 sm:ml-8 lg:ml-10 font-helvetia text-pretty *:mt-2">
+            <li className="mb-2 sm:mb-3 lg:mb-4">
+              <span className="text-neutral-700 dark:text-neutral-200 font-bold">
+                Projektbeschreibung:
+              </span>{" "}
+              openAIScientist ist ein Projekt, das ich im Rahmen meines Studiums
+              entwickelt habe. Es handelt sich um ein R-Paket, das mithilfe der
+              OpenAI-API wissenschaftliche Analysen und Visualisierungen
+              erstellt und diese im Markdown-Format ausgibt.
+            </li>
+            <li className="mb-2 sm:mb-3 lg:mb-4">
+              <span className="text-neutral-700 dark:text-neutral-200 font-bold">
+                Funktionen:
+              </span>{" "}
+              Das Projekt beinhaltet die automatische Generierung von
+              wissenschaftlichen Analysen und Visualisierungen basierend auf
+              Datensätzen, was den wissenschaftlichen Arbeitsprozess enorm
+              erleichtert.
+            </li>
+            <li className="mb-2 sm:mb-3 lg:mb-4">
+              <span className="text-neutral-700 dark:text-neutral-200 font-bold">
+                Verwendete Technologien:
+              </span>{" "}
+              Das Projekt nutzt R, OpenAI API, httr und readr, um Datenanalyse
+              und API-Integration zu ermöglichen. Besonders wichtig ist die
+              sichere Handhabung von API-Schlüsseln über Umgebungsvariablen.
+            </li>
+            <li className="mb-2 sm:mb-3 lg:mb-4">
+              <span className="text-neutral-700 dark:text-neutral-200 font-bold">
+                Relevanz für IT-Kommunikation:
+              </span>{" "}
+              Durch dieses Projekt habe ich gelernt, wie man technische und
+              datenbasierte Inhalte klar und verständlich präsentiert. Diese
+              Fähigkeit ist besonders nützlich in der Kommunikation von
+              IT-Themen an Fachfremde.
+            </li>
+            <li className="mb-2 sm:mb-3 lg:mb-4">
+              <span className="text-neutral-700 dark:text-neutral-200 font-bold">
+                Repository:
+              </span>{" "}
+              Der Quellcode des Projekts ist auf GitHub verfügbar unter{" "}
+              <a
+                href="https://github.com/noluyorAbi/openAIScientist"
+                className="text-blue-500 underline hover:text-blue-700"
+              >
+                openAIScientist GitHub-Repository
+              </a>
+              .
+            </li>
+          </ul>
+        </p>
+      </div>
     </>
   );
 };
 
-
-
-
 const Ich = () => {
   return (
     <>
-      
       <div className="flex justify-center items-center mb-6">
         <img
           src="/1712915185470 (1).jpeg"
@@ -709,148 +745,182 @@ const Ich = () => {
           className="w-44 h-44 rounded-full object-cover"
         />
       </div>
-      
-      <div
-  key={"personal-content"}
-  className="mb-4 rounded-3xl bg-[#F5F5F7] p-4 md:p-14 dark:bg-neutral-800 text-balance text-left"
->
-  <p className="mx-auto max-w-3xl font-sans text-base text-neutral-600 md:text-2xl dark:text-neutral-400">
-    <span className="font-helvetia text-neutral-700 dark:text-neutral-200">
-      Über mich: Persönliche Daten
-    </span>{" "}
-    <ul className="list-disc ml-5 sm:ml-8 lg:ml-10 font-helvetia text-pretty *:mt-2">
-      <li className="mb-2 sm:mb-3 lg:mb-4">
-        <span className="text-neutral-700 dark:text-neutral-200 font-bold">
-          Name:
-        </span>{" "}
-        Alperen Adatepe
-      </li>
-      <li className="mb-2 sm:mb-3 lg:mb-4">
-        <span className="text-neutral-700 dark:text-neutral-200 font-bold">
-          Geburtsdatum:
-        </span>{" "}
-        16. Juni 2004
-      </li>
-      <li className="mb-2 sm:mb-3 lg:mb-4">
-        <span className="text-neutral-700 dark:text-neutral-200 font-bold">
-          E-Mail:
-        </span>{" "}
-        alperen.adatepe1905@gmail.com
-      </li>
-
-      <li className="mb-2 sm:mb-3 lg:mb-4">
-        <span className="text-neutral-700 dark:text-neutral-200 font-bold">
-          LinkedIn:
-        </span>{" "}
-        <a
-          href="https://linkedin.com/in/alperen-adatepe"
-          className="text-blue-500 underline hover:text-blue-700"
-        >
-          linkedin.com/in/alperen-adatepe
-        </a>
-      </li>
-      <li className="mb-2 sm:mb-3 lg:mb-4">
-        <span className="text-neutral-700 dark:text-neutral-200 font-bold">
-          GitHub:
-        </span>{" "}
-        <a
-          href="https://github.com/noluyorAbi"
-          className="text-blue-500 underline hover:text-blue-700"
-        >
-          github.com/noluyorAbi
-        </a>
-      </li>
-    </ul>
-  </p>
-
-  <p className="mx-auto max-w-3xl font-sans text-base text-neutral-600 md:text-2xl dark:text-neutral-400 mt-8">
-    <span className="font-helvetia text-neutral-700 dark:text-neutral-200">
-      Kernkompetenzen auf einen Blick
-    </span>{" "}
-    <ul className="list-disc ml-5 sm:ml-8 lg:ml-10 font-helvetia text-pretty *:mt-2">
-      <li className="mb-2 sm:mb-3 lg:mb-4">
-        <span className="text-neutral-700 dark:text-neutral-200 font-bold">
-          IT-Kommunikation:
-        </span>{" "}
-        Erfahrung in der Aufbereitung komplexer IT-Themen für Nicht-IT-Anwender.
-      </li>
-      <li className="mb-2 sm:mb-3 lg:mb-4">
-        <span className="text-neutral-700 dark:text-neutral-200 font-bold">
-          Frontend- und Backend-Entwicklung:
-        </span>{" "}
-        Umfassende Kenntnisse in JavaScript, TypeScript, React, Next.js, HTML5, und CSS.
-      </li>
-      <li className="mb-2 sm:mb-3 lg:mb-4">
-        <span className="text-neutral-700 dark:text-neutral-200 font-bold">
-          Agiles Arbeiten:
-        </span>{" "}
-        Erfahrung mit Scrum, Jira & Confluence zur effizienten Projektumsetzung.
-      </li>
-      <li className="mb-2 sm:mb-3 lg:mb-4">
-        <span className="text-neutral-700 dark:text-neutral-200 font-bold">
-          Selbstständigkeit:
-        </span>{" "}
-        Hohe Eigeninitiative und Verantwortung bei der Umsetzung von Projekten.
-      </li>
-      <li className="mb-2 sm:mb-3 lg:mb-4">
-        <span className="text-neutral-700 dark:text-neutral-200 font-bold">
-          Kreativität:
-        </span>{" "}
-        Innovatives Denken und kreative Lösungsansätze, insbesondere bei der Gestaltung von nutzerorientierten IT-Plattformen.
-      </li>
-    </ul>
-  </p>
-</div>
-
-
 
       <div
-  key={"berufserfahrung-content"}
-  className="mb-4 rounded-3xl bg-[#F5F5F7] p-4 md:p-14 dark:bg-neutral-800 text-balance text-left"
+        key={"personal-content"}
+        className="mb-4 rounded-3xl bg-[#F5F5F7] p-4 md:p-14 dark:bg-neutral-800 text-balance text-left"
       >
-          <h3 className="text-xl font-bold text-neutral-700 dark:text-neutral-200 mb-4">
-          IT-Kommunikation auf der Überholspur: Meine Motivation für BMW  </h3>
-  <p className="mx-auto max-w-3xl font-sans text-base text-neutral-600 md:text-2xl dark:text-neutral-400">
-    Ich möchte mich zunächst einmal herzlich dafür bedanken, dass Sie sich die Zeit genommen haben, meine Bewerbung so weit zu lesen. Ich hoffe, ich konnte Ihnen einen guten Eindruck davon vermitteln, wie viel Leidenschaft ich für das Entwickeln und Umsetzen von IT-Projekten mitbringe. Wie Sie sicherlich bemerkt haben, macht es mir besonders viel Spaß, Webseiten zu kreieren, die nicht nur funktional sind, sondern auch echten Mehrwert für die Nutzer bieten – ob das nun diese Bewerbung selbst ist oder die vielen Plattformen, die ich für meine Kommilitonen und Nachhilfeschüler entwickelt habe.
-    <br /><br />
-    Ich bin ein sehr extrovertierter Mensch, der es liebt, mit Menschen zu interagieren. Besonders glücklich macht es mich, wenn ich durch meine Arbeit anderen helfen kann – sei es, indem ich komplexe IT-Themen verständlich aufbereite oder Lernplattformen erstelle, die den Lernprozess erleichtern. Gerade die Webseiten, die ich für meine Kommilitonen und Nachhilfeschüler entwickelt habe, zeigen, wie sehr mir daran gelegen ist, mein Wissen auf kreative und verständliche Weise weiterzugeben. Mir liegt es am Herzen, IT so zu vermitteln, dass auch diejenigen, die vielleicht weniger vertraut mit der Materie sind, sie verstehen und anwenden können.
-    <br /><br />
-    Als ich die Stellenanzeige für die Werkstudentenstelle in der IT-Kommunikation bei der BMW Group gesehen habe, wusste ich sofort, dass dies die perfekte Möglichkeit ist, meine Stärken und meine Begeisterung für IT und Kommunikation zu verbinden. Besonders motivierend war für mich die Teilnahme am StudentsDay 2024, wo ich viele Masterstudenten aus dem BMW Masterprogramm kennenlernen durfte. Diese Begegnungen haben mir nicht nur wertvolle Einblicke in die Unternehmenskultur von BMW gegeben, sondern auch meinen Wunsch verstärkt, Teil dieses dynamischen und innovativen Teams zu werden.
-    <br /><br />
-    Aus diesen Gründen freue ich mich umso mehr, mich für die Werkstudentenstelle in der IT-Kommunikation zu bewerben, und hoffe, dass ich die Gelegenheit bekomme, meine Fähigkeiten und mein Engagement bei der BMW Group einzubringen.
-  </p>
-</div>
+        <p className="mx-auto max-w-3xl font-sans text-base text-neutral-600 md:text-2xl dark:text-neutral-400">
+          <span className="font-helvetia text-neutral-700 dark:text-neutral-200">
+            Über mich: Persönliche Daten
+          </span>{" "}
+          <ul className="list-disc ml-5 sm:ml-8 lg:ml-10 font-helvetia text-pretty *:mt-2">
+            <li className="mb-2 sm:mb-3 lg:mb-4">
+              <span className="text-neutral-700 dark:text-neutral-200 font-bold">
+                Name:
+              </span>{" "}
+              Alperen Adatepe
+            </li>
+            <li className="mb-2 sm:mb-3 lg:mb-4">
+              <span className="text-neutral-700 dark:text-neutral-200 font-bold">
+                Geburtsdatum:
+              </span>{" "}
+              16. Juni 2004
+            </li>
+            <li className="mb-2 sm:mb-3 lg:mb-4">
+              <span className="text-neutral-700 dark:text-neutral-200 font-bold">
+                E-Mail:
+              </span>{" "}
+              alperen.adatepe1905@gmail.com
+            </li>
 
+            <li className="mb-2 sm:mb-3 lg:mb-4">
+              <span className="text-neutral-700 dark:text-neutral-200 font-bold">
+                LinkedIn:
+              </span>{" "}
+              <a
+                href="https://linkedin.com/in/alperen-adatepe"
+                className="text-blue-500 underline hover:text-blue-700"
+              >
+                linkedin.com/in/alperen-adatepe
+              </a>
+            </li>
+            <li className="mb-2 sm:mb-3 lg:mb-4">
+              <span className="text-neutral-700 dark:text-neutral-200 font-bold">
+                GitHub:
+              </span>{" "}
+              <a
+                href="https://github.com/noluyorAbi"
+                className="text-blue-500 underline hover:text-blue-700"
+              >
+                github.com/noluyorAbi
+              </a>
+            </li>
+          </ul>
+        </p>
 
+        <p className="mx-auto max-w-3xl font-sans text-base text-neutral-600 md:text-2xl dark:text-neutral-400 mt-8">
+          <span className="font-helvetia text-neutral-700 dark:text-neutral-200">
+            Kernkompetenzen auf einen Blick
+          </span>{" "}
+          <ul className="list-disc ml-5 sm:ml-8 lg:ml-10 font-helvetia text-pretty *:mt-2">
+            <li className="mb-2 sm:mb-3 lg:mb-4">
+              <span className="text-neutral-700 dark:text-neutral-200 font-bold">
+                IT-Kommunikation:
+              </span>{" "}
+              Erfahrung in der Aufbereitung komplexer IT-Themen für
+              Nicht-IT-Anwender.
+            </li>
+            <li className="mb-2 sm:mb-3 lg:mb-4">
+              <span className="text-neutral-700 dark:text-neutral-200 font-bold">
+                Frontend- und Backend-Entwicklung:
+              </span>{" "}
+              Umfassende Kenntnisse in JavaScript, TypeScript, React, Next.js,
+              HTML5, und CSS.
+            </li>
+            <li className="mb-2 sm:mb-3 lg:mb-4">
+              <span className="text-neutral-700 dark:text-neutral-200 font-bold">
+                Agiles Arbeiten:
+              </span>{" "}
+              Erfahrung mit Scrum, Jira & Confluence zur effizienten
+              Projektumsetzung.
+            </li>
+            <li className="mb-2 sm:mb-3 lg:mb-4">
+              <span className="text-neutral-700 dark:text-neutral-200 font-bold">
+                Selbstständigkeit:
+              </span>{" "}
+              Hohe Eigeninitiative und Verantwortung bei der Umsetzung von
+              Projekten.
+            </li>
+            <li className="mb-2 sm:mb-3 lg:mb-4">
+              <span className="text-neutral-700 dark:text-neutral-200 font-bold">
+                Kreativität:
+              </span>{" "}
+              Innovatives Denken und kreative Lösungsansätze, insbesondere bei
+              der Gestaltung von nutzerorientierten IT-Plattformen.
+            </li>
+          </ul>
+        </p>
+      </div>
 
+      <div
+        key={"berufserfahrung-content"}
+        className="mb-4 rounded-3xl bg-[#F5F5F7] p-4 md:p-14 dark:bg-neutral-800 text-balance text-left"
+      >
+        <h3 className="text-xl font-bold text-neutral-700 dark:text-neutral-200 mb-4">
+          IT-Kommunikation auf der Überholspur: Meine Motivation für BMW{" "}
+        </h3>
+        <p className="mx-auto max-w-3xl font-sans text-base text-neutral-600 md:text-2xl dark:text-neutral-400">
+          Ich möchte mich zunächst einmal herzlich dafür bedanken, dass Sie sich
+          die Zeit genommen haben, meine Bewerbung so weit zu lesen. Ich hoffe,
+          ich konnte Ihnen einen guten Eindruck davon vermitteln, wie viel
+          Leidenschaft ich für das Entwickeln und Umsetzen von IT-Projekten
+          mitbringe. Wie Sie sicherlich bemerkt haben, macht es mir besonders
+          viel Spaß, Webseiten zu kreieren, die nicht nur funktional sind,
+          sondern auch echten Mehrwert für die Nutzer bieten – ob das nun diese
+          Bewerbung selbst ist oder die vielen Plattformen, die ich für meine
+          Kommilitonen und Nachhilfeschüler entwickelt habe.
+          <br />
+          <br />
+          Ich bin ein sehr extrovertierter Mensch, der es liebt, mit Menschen zu
+          interagieren. Besonders glücklich macht es mich, wenn ich durch meine
+          Arbeit anderen helfen kann – sei es, indem ich komplexe IT-Themen
+          verständlich aufbereite oder Lernplattformen erstelle, die den
+          Lernprozess erleichtern. Gerade die Webseiten, die ich für meine
+          Kommilitonen und Nachhilfeschüler entwickelt habe, zeigen, wie sehr
+          mir daran gelegen ist, mein Wissen auf kreative und verständliche
+          Weise weiterzugeben. Mir liegt es am Herzen, IT so zu vermitteln, dass
+          auch diejenigen, die vielleicht weniger vertraut mit der Materie sind,
+          sie verstehen und anwenden können.
+          <br />
+          <br />
+          Als ich die Stellenanzeige für die Werkstudentenstelle in der
+          IT-Kommunikation bei der BMW Group gesehen habe, wusste ich sofort,
+          dass dies die perfekte Möglichkeit ist, meine Stärken und meine
+          Begeisterung für IT und Kommunikation zu verbinden. Besonders
+          motivierend war für mich die Teilnahme am StudentsDay 2024, wo ich
+          viele Masterstudenten aus dem BMW Masterprogramm kennenlernen durfte.
+          Diese Begegnungen haben mir nicht nur wertvolle Einblicke in die
+          Unternehmenskultur von BMW gegeben, sondern auch meinen Wunsch
+          verstärkt, Teil dieses dynamischen und innovativen Teams zu werden.
+          <br />
+          <br />
+          Aus diesen Gründen freue ich mich umso mehr, mich für die
+          Werkstudentenstelle in der IT-Kommunikation zu bewerben, und hoffe,
+          dass ich die Gelegenheit bekomme, meine Fähigkeiten und mein
+          Engagement bei der BMW Group einzubringen.
+        </p>
+      </div>
 
-<div
-  key={"nachhilfe-content"}
-  className="mb-4 rounded-3xl bg-[#F5F5F7] p-4 md:p-14 dark:bg-neutral-800 text-balance text-left"
->
-  <h3 className="text-xl font-bold text-neutral-700 dark:text-neutral-200 mb-4">
-    Wie jetzt? Schon durch?
-  </h3>
-  <p className="mx-auto max-w-3xl font-sans text-base text-neutral-600 md:text-2xl dark:text-neutral-400">
-    Normalerweise würde hier ein schicker „Call to Action“ stehen, der Sie freundlich auffordert, mich zu kontaktieren. Aber ich denke, nach dieser Seite haben Sie schon einen guten Eindruck von meiner Leidenschaft für IT und Kommunikation bekommen. <br /><br />
-    Egal, wie es weitergeht – ich freue mich darauf, von Ihnen zu hören und meine Begeisterung bei der BMW Group einzubringen. <br /><br />
-    Und wer weiß, vielleicht hatten Sie ja sogar genauso viel Spaß beim Durchklicken wie ich beim Erstellen dieser Seite!
-  </p>
-  <div className="mx-auto max-w-3xl font-sans text-base text-neutral-600 md:text-2xl dark:text-neutral-400 italic mt-6">
-    <span className="block text-center font-bold">
-      "The only way to do great work is to love what you do."
-    </span>
-    <span className="block text-center mt-2">– Steve Jobs</span>
-  </div>
-</div>
-
-
-
+      <div
+        key={"nachhilfe-content"}
+        className="mb-4 rounded-3xl bg-[#F5F5F7] p-4 md:p-14 dark:bg-neutral-800 text-balance text-left"
+      >
+        <h3 className="text-xl font-bold text-neutral-700 dark:text-neutral-200 mb-4">
+          Wie jetzt? Schon durch?
+        </h3>
+        <p className="mx-auto max-w-3xl font-sans text-base text-neutral-600 md:text-2xl dark:text-neutral-400">
+          Normalerweise würde hier ein schicker „Call to Action“ stehen, der Sie
+          freundlich auffordert, mich zu kontaktieren. Aber ich denke, nach
+          dieser Seite haben Sie schon einen guten Eindruck von meiner
+          Leidenschaft für IT und Kommunikation bekommen. <br />
+          <br />
+          Egal, wie es weitergeht – ich freue mich darauf, von Ihnen zu hören
+          und meine Begeisterung bei der BMW Group einzubringen. <br />
+          <br />
+          Und wer weiß, vielleicht hatten Sie ja sogar genauso viel Spaß beim
+          Durchklicken wie ich beim Erstellen dieser Seite!
+        </p>
+        <div className="mx-auto max-w-3xl font-sans text-base text-neutral-600 md:text-2xl dark:text-neutral-400 italic mt-6">
+          <span className="block text-center font-bold">
+            "The only way to do great work is to love what you do."
+          </span>
+          <span className="block text-center mt-2">– Steve Jobs</span>
+        </div>
+      </div>
     </>
   );
 };
-
-
 
 const data = [
   {
