@@ -442,7 +442,7 @@ const Berufserfahrung = () => {
               <span className="text-neutral-700 dark:text-neutral-200 font-bold">
                 Zeitraum:
               </span>{" "}
-              Von Mai 2023 bis April 2024 war ich als Junior Software Developer
+              Von April 2023 bis April 2024 war ich als Junior Software Developer
               tätig und habe 20 Stunden pro Woche gearbeitet.
             </li>
             <li className="mb-2 sm:mb-3 lg:mb-4">
@@ -644,28 +644,55 @@ const Studium = () => {
       </p>
     </div>
     
-    {/* openAIScientist Projekt */}
-    <div
-  key={"berufserfahrung-content"}
-  className="mb-4 rounded-3xl bg-[#F5F5F7] p-4 md:p-14 dark:bg-neutral-800 text-balance text-left"
->
-  <h3 className="text-xl font-bold text-neutral-700 dark:text-neutral-200 mb-4">
-    IT-Kommunikation auf der Überholspur: Meine Motivation für BMW
-  </h3>
-  <p className="mx-auto max-w-3xl font-sans text-base text-neutral-600 md:text-2xl dark:text-neutral-400">
-    Ich möchte mich zunächst einmal herzlich dafür bedanken, dass Sie sich die Zeit genommen haben, meine Bewerbung so weit zu lesen. Ich hoffe, ich konnte Ihnen einen guten Eindruck davon vermitteln, wie viel Leidenschaft ich für das Entwickeln und Umsetzen von IT-Projekten mitbringe. Wie Sie sicherlich bemerkt haben, macht es mir besonders viel Spaß, Webseiten zu kreieren, die nicht nur funktional sind, sondern auch echten Mehrwert für die Nutzer bieten – ob das nun diese Bewerbung selbst ist oder die vielen Plattformen, die ich für meine Kommilitonen und Nachhilfeschüler entwickelt habe.
-    <br /><br />
-    Ich bin ein sehr extrovertierter Mensch, der es liebt, mit Menschen zu interagieren. Besonders glücklich macht es mich, wenn ich durch meine Arbeit anderen helfen kann – sei es, indem ich komplexe IT-Themen verständlich aufbereite oder Lernplattformen erstelle, die den Lernprozess erleichtern. Gerade die Webseiten, die ich für meine Kommilitonen und Nachhilfeschüler entwickelt habe, zeigen, wie sehr mir daran gelegen ist, mein Wissen auf kreative und verständliche Weise weiterzugeben. Mir liegt es am Herzen, IT so zu vermitteln, dass auch diejenigen, die vielleicht weniger vertraut mit der Materie sind, sie verstehen und anwenden können.
-    <br /><br />
-    Durch meine Erfahrung in der Entwicklung von nutzerzentrierten IT-Projekten habe ich gelernt, sowohl kreative als auch technische Herausforderungen effektiv zu meistern. Ich freue mich besonders darauf, meine Kommunikationsfähigkeiten und technischen Kompetenzen in der IT-Kommunikation bei BMW weiter auszubauen.
-    <br /><br />
-    Als ich die Stellenanzeige für die Werkstudentenstelle in der IT-Kommunikation bei der BMW Group gesehen habe, wusste ich sofort, dass dies die perfekte Möglichkeit ist, meine Stärken und meine Begeisterung für IT und Kommunikation zu verbinden. Besonders motivierend war für mich die Teilnahme am StudentsDay 2024, wo ich viele Masterstudenten aus dem BMW Masterprogramm kennenlernen durfte. Diese Begegnungen haben mir nicht nur wertvolle Einblicke in die Unternehmenskultur von BMW gegeben, sondern auch meinen Wunsch verstärkt, Teil dieses dynamischen und innovativen Teams zu werden.
-    <br /><br />
-    Die BMW Group steht für Innovation, Teamwork und die Fähigkeit, komplexe technische Systeme für ihre Kunden zugänglich zu machen – genau diese Werte passen zu meinen eigenen beruflichen Zielen. Mit meiner Erfahrung in der Entwicklung und Kommunikation technischer Konzepte, gepaart mit meiner Leidenschaft für nutzerzentriertes Design, bin ich überzeugt, dass ich die BMW Group erfolgreich unterstützen kann.
-    <br /><br />
-    Aus diesen Gründen freue ich mich umso mehr, mich für die Werkstudentenstelle in der IT-Kommunikation zu bewerben, und hoffe, dass ich die Gelegenheit bekomme, meine Fähigkeiten und mein Engagement bei der BMW Group einzubringen.
-  </p>
-</div>
+{/* openAIScientist Projekt */}
+<div
+      key={"openaiscientist-content"}
+      className="mb-4 rounded-3xl bg-[#F5F5F7] p-4 md:p-14 dark:bg-neutral-800 text-balance text-left"
+    >
+      <p className="mx-auto max-w-3xl font-sans text-base text-neutral-600 md:text-2xl dark:text-neutral-400">
+        <span className="font-helvetia text-neutral-700 dark:text-neutral-200">
+          Projekt im Studium: openAIScientist - KI-gestützte wissenschaftliche Analysen
+        </span>{" "}
+        <ul className="list-disc ml-5 sm:ml-8 lg:ml-10 font-helvetia text-pretty *:mt-2">
+          <li className="mb-2 sm:mb-3 lg:mb-4">
+            <span className="text-neutral-700 dark:text-neutral-200 font-bold">
+              Projektbeschreibung:
+            </span>{" "}
+            openAIScientist ist ein Projekt, das ich im Rahmen meines Studiums entwickelt habe. Es handelt sich um ein R-Paket, das mithilfe der OpenAI-API wissenschaftliche Analysen und Visualisierungen erstellt und diese im Markdown-Format ausgibt.
+          </li>
+          <li className="mb-2 sm:mb-3 lg:mb-4">
+            <span className="text-neutral-700 dark:text-neutral-200 font-bold">
+              Funktionen:
+            </span>{" "}
+            Das Projekt beinhaltet die automatische Generierung von wissenschaftlichen Analysen und Visualisierungen basierend auf Datensätzen, was den wissenschaftlichen Arbeitsprozess enorm erleichtert.
+          </li>
+          <li className="mb-2 sm:mb-3 lg:mb-4">
+            <span className="text-neutral-700 dark:text-neutral-200 font-bold">
+              Verwendete Technologien:
+            </span>{" "}
+            Das Projekt nutzt R, OpenAI API, httr und readr, um Datenanalyse und API-Integration zu ermöglichen. Besonders wichtig ist die sichere Handhabung von API-Schlüsseln über Umgebungsvariablen.
+          </li>
+          <li className="mb-2 sm:mb-3 lg:mb-4">
+            <span className="text-neutral-700 dark:text-neutral-200 font-bold">
+              Relevanz für IT-Kommunikation:
+            </span>{" "}
+            Durch dieses Projekt habe ich gelernt, wie man technische und datenbasierte Inhalte klar und verständlich präsentiert. Diese Fähigkeit ist besonders nützlich in der Kommunikation von IT-Themen an Fachfremde.
+          </li>
+          <li className="mb-2 sm:mb-3 lg:mb-4">
+            <span className="text-neutral-700 dark:text-neutral-200 font-bold">
+              Repository:
+            </span>{" "}
+            Der Quellcode des Projekts ist auf GitHub verfügbar unter{" "}
+            <a
+              href="https://github.com/noluyorAbi/openAIScientist"
+              className="text-blue-500 underline hover:text-blue-700"
+            >
+              openAIScientist GitHub-Repository
+            </a>.
+          </li>
+        </ul>
+      </p>
+    </div>
 
     </>
   );
@@ -711,14 +738,9 @@ const Ich = () => {
         <span className="text-neutral-700 dark:text-neutral-200 font-bold">
           E-Mail:
         </span>{" "}
-        adatepe.alperen@campus.lmu.de
+        alperen.adatepe1905@gmail.com
       </li>
-      <li className="mb-2 sm:mb-3 lg:mb-4">
-        <span className="text-neutral-700 dark:text-neutral-200 font-bold">
-          Telefonnummer:
-        </span>{" "}
-        +49 01745201905
-      </li>
+
       <li className="mb-2 sm:mb-3 lg:mb-4">
         <span className="text-neutral-700 dark:text-neutral-200 font-bold">
           LinkedIn:
