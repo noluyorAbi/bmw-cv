@@ -10,7 +10,8 @@ export default function Home() {
           IT-Kommunikation? <br /> Kein Problem.
         </h2>
         <p className="mx-auto  max-w-xs text-center text-sm font-semibold text-gray-600 dark:text-gray-400 sm:max-w-md md:text-lg font-helvetia select-none ">
-        Erleben Sie, wie ich bereits jetzt komplexe IT-Inhalte verständlich und zugänglich vermittle
+          Erleben Sie, wie ich bereits jetzt komplexe IT-Inhalte verständlich
+          und zugänglich vermittle
         </p>
         <Link href="/about-me">
           <button className="text-md mt-6  transform rounded-lg bg-gradient-to-r from-[#0079EA] via-[#522DAB] to-[#F60502] px-3 py-2 font-helvetia select-none text-white dark:text-white shadow-lg transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl sm:mt-12 sm:px-5 md:text-lg">
