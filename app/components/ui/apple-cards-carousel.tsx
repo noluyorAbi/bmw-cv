@@ -1,4 +1,5 @@
 "use client";
+
 import React, {
   useEffect,
   useRef,
@@ -11,10 +12,10 @@ import {
   IconArrowNarrowRight,
   IconX,
 } from "@tabler/icons-react";
-import { cn } from "../../lib/utils";
+import { cn } from "../../lib/utils"; // Stelle sicher, dass dieser Pfad korrekt ist
 import { AnimatePresence, motion } from "framer-motion";
 import Image, { ImageProps } from "next/image";
-import { useOutsideClick } from "../../hooks/use-outside-click";
+import { useOutsideClick } from "../../hooks/use-outside-click"; // Stelle sicher, dass dieser Hook vorhanden ist
 
 interface CarouselProps {
   items: JSX.Element[];
@@ -37,9 +38,9 @@ export const CarouselContext = createContext<{
 });
 
 export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
-  const carouselRef = React.useRef<HTMLDivElement>(null);
-  const [canScrollLeft, setCanScrollLeft] = React.useState(false);
-  const [canScrollRight, setCanScrollRight] = React.useState(true);
+  const carouselRef = useRef<HTMLDivElement>(null);
+  const [canScrollLeft, setCanScrollLeft] = useState(false);
+  const [canScrollRight, setCanScrollRight] = useState(true);
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -72,8 +73,8 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
   const handleCardClose = (index: number) => {
     if (carouselRef.current) {
       const cardWidth =
-        window.innerWidth < 768 ? carouselRef.current.clientWidth : 384; // Adjusted for mobile
-      const gap = window.innerWidth < 768 ? 16 : 32; // Responsive gap
+        window.innerWidth < 768 ? carouselRef.current.clientWidth : 384; // Angepasst für mobile
+      const gap = window.innerWidth < 768 ? 16 : 32; // Responsiver Abstand
       const scrollPosition = (cardWidth + gap + 350) * index;
       carouselRef.current.scrollTo({
         left: scrollPosition,
@@ -87,9 +88,26 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
     <CarouselContext.Provider
       value={{ onCardClose: handleCardClose, currentIndex }}
     >
+      {/* Scroll-Buttons auf mobilen Geräten verstecken */}
+      <div className="mr-10 flex justify-end gap-2 hidden md:flex">
+        <button
+          className="relative z-40 flex h-10 w-10 items-center justify-center rounded-full bg-gray-600 dark:bg-gray-100 disabled:opacity-50 hover:bg-gray-900 dark:hover:bg-gray-300"
+          onClick={scrollLeft}
+          disabled={!canScrollLeft}
+        >
+          <IconArrowNarrowLeft className="h-6 w-6 text-white dark:text-black" />
+        </button>
+        <button
+          className="relative z-40 flex h-10 w-10 items-center justify-center rounded-full bg-gray-600 dark:bg-gray-100 disabled:opacity-50 hover:bg-gray-900 dark:hover:bg-gray-300"
+          onClick={scrollRight}
+          disabled={!canScrollRight}
+        >
+          <IconArrowNarrowRight className="h-6 w-6 text-white dark:text-black" />
+        </button>
+      </div>
       <div className="relative w-full max-w-screen-xl mx-auto">
         <div
-          className="flex w-full overflow-hidden py-10 md:py-20"
+          className="flex w-full overflow-hidden py-5 md:py-10 max-h-[80vh]"
           ref={carouselRef}
           onScroll={checkScrollability}
         >
@@ -111,29 +129,12 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
                   },
                 }}
                 key={"card" + index}
-                className="rounded-3xl"
+                className="rounded-3xl flex-shrink-0"
               >
                 {item}
               </motion.div>
             ))}
           </div>
-        </div>
-        {/* Hide scroll buttons on mobile */}
-        <div className="mr-10 flex justify-end gap-2 hidden md:flex">
-          <button
-            className="relative z-40 flex h-10 w-10 items-center justify-center rounded-full bg-gray-600 dark:bg-gray-100 disabled:opacity-50 hover:bg-gray-900 dark:hover:bg-gray-300"
-            onClick={scrollLeft}
-            disabled={!canScrollLeft}
-          >
-            <IconArrowNarrowLeft className="h-6 w-6 text-white dark:text-black" />
-          </button>
-          <button
-            className="relative z-40 flex h-10 w-10 items-center justify-center rounded-full bg-gray-600 dark:bg-gray-100 disabled:opacity-50 hover:bg-gray-900 dark:hover:bg-gray-300"
-            onClick={scrollRight}
-            disabled={!canScrollRight}
-          >
-            <IconArrowNarrowRight className="h-6 w-6 text-white dark:text-black" />
-          </button>
         </div>
       </div>
     </CarouselContext.Provider>
@@ -185,7 +186,7 @@ export const Card = ({
     <>
       <AnimatePresence>
         {open && (
-          <div className="fixed inset-0 z-50 h-screen overflow-auto ">
+          <div className="fixed inset-0 z-50 h-screen overflow-auto">
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -198,7 +199,7 @@ export const Card = ({
               exit={{ opacity: 0 }}
               ref={containerRef}
               layoutId={layout ? `card-${card.title}` : undefined}
-              className="relative z-[60] mx-auto my-10 h-fit max-w-5xl rounded-3xl bg-white p-4 font-sans md:p-10 dark:bg-neutral-900 "
+              className="relative z-[60] mx-auto my-10 h-fit max-w-5xl rounded-3xl bg-white p-4 font-sans md:p-10 dark:bg-neutral-900"
             >
               <button
                 className="sticky right-0 top-4 ml-auto flex h-8 w-8 items-center justify-center rounded-full bg-black dark:bg-white"
@@ -226,10 +227,16 @@ export const Card = ({
       <motion.button
         layoutId={layout ? `card-${card.title}` : undefined}
         onClick={handleOpen}
-        className="relative z-10 flex shadow-black shadow-xl dark:shadow-white dark:shadow-md hover:translate-y-[-1.5rem] transition-all ease-in-out duration-300 h-80 w-full md:w-96 flex-col items-start justify-start overflow-hidden rounded-3xl bg-gray-100 md:h-[40rem] dark:bg-neutral-900"
+        className="relative z-10 flex shadow-black shadow-xl dark:shadow-white dark:shadow-md 
+                   hover:translate-y-[-1.5rem] transition-all ease-in-out duration-300 
+                   max-h-[60dvh]
+                   h-[50vh] sm:h-80 md:h-[60vh] lg:h-[70vh] 
+                   w-full md:w-96 
+                   flex-col items-start justify-start 
+                   overflow-hidden rounded-3xl bg-gray-100 dark:bg-neutral-900"
       >
-        <div className="pointer-events-none absolute inset-x-0 top-0 z-30 h-full   bg-gradient-to-r from-transparent from-60% to-black  dark:to-black " />
-        <div className="relative z-40 p-4 md:p-8  bg-gradient-to-b from-black to-transparent ">
+        <div className="pointer-events-none absolute inset-x-0 top-0 z-30 h-full bg-gradient-to-r from-transparent from-60% to-black dark:to-black" />
+        <div className="relative z-40 p-4 md:p-8 bg-gradient-to-b from-black to-transparent">
           <motion.p
             layoutId={layout ? `category-${card.category}` : undefined}
             className="text-left font-sans text-sm font-medium text-white md:text-base"
@@ -268,6 +275,7 @@ export const BlurImage = ({
       className={cn(
         "transition duration-300",
         isLoading ? "blur-sm" : "blur-0",
+        "object-cover",
         className,
       )}
       onLoad={() => setLoading(false)}
