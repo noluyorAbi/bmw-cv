@@ -1,3 +1,4 @@
+// src/components/ui/apple-cards-carousel.tsx
 "use client";
 
 import React, {
@@ -12,10 +13,10 @@ import {
   IconArrowNarrowRight,
   IconX,
 } from "@tabler/icons-react";
-import { cn } from "../../lib/utils"; // Stelle sicher, dass dieser Pfad korrekt ist
+import { cn } from "../../lib/utils"; 
 import { AnimatePresence, motion } from "framer-motion";
 import Image, { ImageProps } from "next/image";
-import { useOutsideClick } from "../../hooks/use-outside-click"; // Stelle sicher, dass dieser Hook vorhanden ist
+import { useOutsideClick } from "../../hooks/use-outside-click"; 
 
 interface CarouselProps {
   items: JSX.Element[];
@@ -73,8 +74,8 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
   const handleCardClose = (index: number) => {
     if (carouselRef.current) {
       const cardWidth =
-        window.innerWidth < 768 ? carouselRef.current.clientWidth : 384; // Angepasst für mobile
-      const gap = window.innerWidth < 768 ? 16 : 32; // Responsiver Abstand
+        window.innerWidth < 768 ? carouselRef.current.clientWidth : 384; // Adjusted for mobile
+      const gap = window.innerWidth < 768 ? 16 : 32; // Responsive gap
       const scrollPosition = (cardWidth + gap + 350) * index;
       carouselRef.current.scrollTo({
         left: scrollPosition,
@@ -88,7 +89,7 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
     <CarouselContext.Provider
       value={{ onCardClose: handleCardClose, currentIndex }}
     >
-      {/* Scroll-Buttons auf mobilen Geräten verstecken */}
+      {/* Hide scroll buttons on mobile devices */}
       <div className="mr-10 flex justify-end gap-2 hidden md:flex">
         <button
           className="relative z-40 flex h-10 w-10 items-center justify-center rounded-full bg-gray-600 dark:bg-gray-100 disabled:opacity-50 hover:bg-gray-900 dark:hover:bg-gray-300"
@@ -125,7 +126,6 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
                     duration: 0.5,
                     delay: 0.2 * index,
                     ease: "easeOut",
-                    once: true,
                   },
                 }}
                 key={"card" + index}
