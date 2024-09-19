@@ -21,11 +21,11 @@ function consoleEasterEgg() {
   console.log("\n\n");
   console.log(
     "%cIrgendwie kommen mir die oben verwendeten Hintergrundfarben bekannt vor. Ihnen auch?",
-    "color: #FFFFFF; font-size: 18px; font-family: Helvetica;",
+    "font-size: 18px; font-family: Helvetica;",
   );
   console.log(
     "%cNaja, wenn wir schon mal hier sind, kann ich erwähnen, dass der M4 CSL einer meiner Favoriten ist. Und Ihrer?",
-    "color: #FFFFFF; font-size: 18px; font-family: Helvetica;",
+    " font-size: 18px; font-family: Helvetica;",
   );
   console.log("\n\n");
 }
@@ -38,7 +38,7 @@ export default function Home() {
       consoleEasterEgg();
       hasRun.current = true;
     }
-  }, []); 
+  }, []);
 
   return (
     <div className="flex h-screen items-center justify-center bg-white dark:bg-black">
