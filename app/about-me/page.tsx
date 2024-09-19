@@ -68,6 +68,7 @@ const HustleSWT = () => {
           <a
             href="https://hustle-swt.vercel.app/"
             className="text-blue-500 underline hover:text-blue-700"
+            target="_blank"
           >
             hustle-swt
           </a>
@@ -143,7 +144,7 @@ const HustleSWT = () => {
           src="2024-09-19 01-40-55.mp4"
           className="w-full rounded-2xl mt-8"
           controls
-          autoPlay
+          muted
         />
       </div>
 
@@ -153,7 +154,7 @@ const HustleSWT = () => {
             src="2024-09-19 02-04-43.mp4"
             className="w-full"
             controls
-            autoPlay
+            muted
             ref={videoRef}
           />
         </div>
@@ -215,6 +216,7 @@ const MyUniNotes = () => {
           <a
             href="https://myuninotes.com/"
             className="text-blue-500 underline hover:text-blue-700"
+            target="_blank"
           >
             myuninotes
           </a>
@@ -337,6 +339,7 @@ const Powerpoint = () => {
           <a
             href="https://jwt-woad.vercel.app/"
             className="text-blue-500 underline hover:text-blue-700"
+            target="_blank"
           >
             JSON Web Tokens
           </a>
@@ -445,6 +448,7 @@ const Berufserfahrung = () => {
             <a
               href="https://titanom.com"
               className="text-blue-500 underline hover:text-blue-700"
+              target="_blank"
             >
               Titanom Technologies GmbH
             </a>
@@ -546,9 +550,9 @@ const Berufserfahrung = () => {
               <span className="text-neutral-700 dark:text-neutral-200 font-bold">
                 Schüler:
               </span>{" "}
-              Ich gebe zwei Schülern Nachhilfe: Einer studiert BWL und behandelt
-              ein Informatikmodul, die andere ist Abiturientin und wird in
-              IT-Themen unterstützt.
+              Ich gebe zwei Schülern Nachhilfe: Einem BWL-Studenten der ein
+              Informatik Modul behadelt und einer Abiturientin, die Informatik
+              als Prüfungsfach hat.
             </li>
             <li className="mb-2 sm:mb-3 lg:mb-4">
               <span className="text-neutral-700 dark:text-neutral-200 font-bold">
@@ -562,6 +566,7 @@ const Berufserfahrung = () => {
                   <a
                     href="https://info-sigma.vercel.app/"
                     className="text-blue-500 underline hover:text-blue-700"
+                    target="_blank"
                   >
                     MyUniNotes für den BWL-Studenten
                   </a>
@@ -570,6 +575,7 @@ const Berufserfahrung = () => {
                   <a
                     href="https://abitur-nachhilfe.vercel.app/"
                     className="text-blue-500 underline hover:text-blue-700"
+                    target="_blank"
                   >
                     MyUniNotes für die Abiturientin
                   </a>
@@ -653,9 +659,7 @@ const Studium = () => {
                 Praktische Anwendungen:
               </span>{" "}
               In verschiedenen Projekten konnte ich sowohl Algorithmen als auch
-              statistische Methoden anwenden. So habe ich unter anderem
-              rekursive Traversal-Methoden für Binärbäume entwickelt und tiefere
-              Einblicke in die Datenanalyse gewonnen.
+              statistische Methoden anwenden.
             </li>
             <li className="mb-2 sm:mb-3 lg:mb-4">
               <span className="text-neutral-700 dark:text-neutral-200 font-bold">
@@ -711,9 +715,10 @@ const Studium = () => {
                 Relevanz für IT-Kommunikation:
               </span>{" "}
               Durch dieses Projekt habe ich gelernt, wie man technische und
-              datenbasierte Inhalte klar und verständlich präsentiert. Diese
-              Fähigkeit ist besonders nützlich in der Kommunikation von
-              IT-Themen an Fachfremde.
+              datenbasierte Inhalte klar und verständlich präsentiert. Das Ziel
+              war es, nicht Informatikern & Statistikeren einen leichten
+              Einstieg in die Datenanalyse zu ermöglichen indem KI Teile der
+              Datenanalyse übernimmt.
             </li>
             <li className="mb-2 sm:mb-3 lg:mb-4">
               <span className="text-neutral-700 dark:text-neutral-200 font-bold">
@@ -723,6 +728,7 @@ const Studium = () => {
               <a
                 href="https://github.com/noluyorAbi/openAIScientist"
                 className="text-blue-500 underline hover:text-blue-700"
+                target="_blank"
               >
                 openAIScientist GitHub-Repository
               </a>
@@ -781,6 +787,8 @@ const Ich = () => {
               <a
                 href="https://linkedin.com/in/alperen-adatepe"
                 className="text-blue-500 underline hover:text-blue-700"
+                target="_blank"
+
               >
                 linkedin.com/in/alperen-adatepe
               </a>
@@ -792,6 +800,8 @@ const Ich = () => {
               <a
                 href="https://github.com/noluyorAbi"
                 className="text-blue-500 underline hover:text-blue-700"
+                target="_blank"
+
               >
                 github.com/noluyorAbi
               </a>
@@ -867,11 +877,11 @@ const Ich = () => {
           Arbeit anderen helfen kann – sei es, indem ich komplexe IT-Themen
           verständlich aufbereite oder Lernplattformen erstelle, die den
           Lernprozess erleichtern. Gerade die Webseiten, die ich für meine
-          Kommilitonen und Nachhilfeschüler entwickelt habe, zeigen, wie sehr
-          mir daran gelegen ist, mein Wissen auf kreative und verständliche
-          Weise weiterzugeben. Mir liegt es am Herzen, IT so zu vermitteln, dass
-          auch diejenigen, die vielleicht weniger vertraut mit der Materie sind,
-          sie verstehen und anwenden können.
+          Kommilitonen und Nachhilfeschüler entwickelt habe, zeigen, wie wichtig
+          es mir ist, mein Wissen auf kreative und verständliche Weise
+          weiterzugeben. Mir liegt es am Herzen, IT so zu vermitteln, dass auch
+          diejenigen, die vielleicht weniger vertraut mit der Materie sind, sie
+          verstehen und anwenden können.
           <br />
           <br />
           Als ich die Stellenanzeige für die Werkstudentenstelle in der
