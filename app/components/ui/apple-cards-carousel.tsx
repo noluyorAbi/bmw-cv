@@ -89,7 +89,7 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
     >
       <div className="relative w-full max-w-screen-xl mx-auto">
         <div
-          className="flex w-full overflow-hidden py- md:py-20"
+          className="flex w-full overflow-hidden py-10 md:py-20"
           ref={carouselRef}
           onScroll={checkScrollability}
         >
@@ -185,7 +185,7 @@ export const Card = ({
     <>
       <AnimatePresence>
         {open && (
-          <div className="fixed inset-0 z-50 h-screen overflow-auto">
+          <div className="fixed inset-0 z-50 h-screen overflow-auto ">
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -226,10 +226,10 @@ export const Card = ({
       <motion.button
         layoutId={layout ? `card-${card.title}` : undefined}
         onClick={handleOpen}
-        className="relative z-10 flex h-80 w-full md:w-96 flex-col items-start justify-start overflow-hidden rounded-3xl bg-gray-100 md:h-[40rem] dark:bg-neutral-900"
+        className="relative z-10 flex shadow-black shadow-xl dark:shadow-white dark:shadow-md hover:translate-y-[-1.5rem] transition-all ease-in-out duration-300 h-80 w-full md:w-96 flex-col items-start justify-start overflow-hidden rounded-3xl bg-gray-100 md:h-[40rem] dark:bg-neutral-900"
       >
         <div className="pointer-events-none absolute inset-x-0 top-0 z-30 h-full   bg-gradient-to-r from-transparent from-60% to-black  dark:to-black " />
-        <div className="relative z-40 p-4 md:p-8   bg-gradient-to-b from-black to-transparent">
+        <div className="relative z-40 p-4 md:p-8  bg-gradient-to-b from-black to-transparent ">
           <motion.p
             layoutId={layout ? `category-${card.category}` : undefined}
             className="text-left font-sans text-sm font-medium text-white md:text-base"
