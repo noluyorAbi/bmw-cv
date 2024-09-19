@@ -203,12 +203,12 @@ const MyUniNotes = () => {
     >
       <p className="mx-auto max-w-3xl font-sans text-base text-neutral-600 md:text-2xl dark:text-neutral-400">
         <span className="font-helvetia text-neutral-700 dark:text-neutral-200">
-          Meine erste Webseite:{" "}
+          Meine zweite Webseite:{" "}
           <a
-            href="https://hustle-swt.vercel.app/"
+            href="https://myuninotes.com/"
             className="text-blue-500 underline hover:text-blue-700"
           >
-            hustle-swt
+            myuninotes
           </a>
         </span>{" "}
         <ul className="list-disc ml-5 sm:ml-8 lg:ml-10 font-helvetia text-pretty *:mt-2">
@@ -216,93 +216,86 @@ const MyUniNotes = () => {
             <span className="text-neutral-700 dark:text-neutral-200 font-bold">
               Erstellung:
             </span>{" "}
-            Während meines Informatikstudiums (3.Semeseter)
+            Während meines Informatikstudiums (4. Semester) als Weiterentwicklung von hustleswt
+          </li>
+          <li className="mb-2 sm:mb-3 lg:mb-4">
+            <span className="text-neutral-700 dark:text-neutral-200 font-bold">
+              Verbesserungen:
+            </span>{" "}
+            Basierend auf den Erfahrungen mit hustleswt habe ich eine Lösung mit einer
+            Suchfunktion und strukturierten Links integriert, um den Nutzern das schnelle
+            Auffinden von Dateien und Themen zu ermöglichen. Ich habe bewusst auf UI-Spielereien
+            verzichtet, um eine bessere User Experience (UX) zu schaffen.
+          </li>
+          <li className="mb-2 sm:mb-3 lg:mb-4">
+            <span className="text-neutral-700 dark:text-neutral-200 font-bold">
+              Kommentarfunktion:
+            </span>{" "}
+            Ich habe eine Kommentarfunktion hinzugefügt, damit Studierende sich gegenseitig bei
+            Lösungen und Erklärungen unterstützen können.
           </li>
           <li className="mb-2 sm:mb-3 lg:mb-4">
             <span className="text-neutral-700 dark:text-neutral-200 font-bold">
               Ziel:
             </span>{" "}
-            Lösungen, Erklärungen und Notizen für Softwaretechnik in
-            ansprechender und kreativer Form für Kommilitonen bereitstellen
+            Erklärungen und Notizen für IT-Themen in klarer und verständlicher Weise für
+            Kommilitonen bereitzustellen.
           </li>
           <li className="mb-2 sm:mb-3 lg:mb-4">
             <span className="text-neutral-700 dark:text-neutral-200 font-bold">
               Verfügbarkeit:
             </span>{" "}
-            Online-Zugriff von überall und jedem Gerät aus durch responsivem
-            Design
+            Responsives Design für den Zugriff von jedem Gerät und überall.
           </li>
           <li className="mb-2 sm:mb-3 lg:mb-4">
             <span className="text-neutral-700 dark:text-neutral-200 font-bold">
-              Unterstützung:
+              Ergebnisse:
             </span>{" "}
-            Lernprozess meiner Kommilitonen erleichtern
+            Die Mühe, die Seite mit qualitativ hochwertigem Inhalt und guter Struktur zu pflegen,
+            hat sich bemerkbar gemacht: Über 584 aktive Nutzer, 11.322 Interaktionen und
+            positives Feedback in Uni-Gruppen.
           </li>
           <li className="mb-2 sm:mb-3 lg:mb-4">
             <span className="text-neutral-700 dark:text-neutral-200 font-bold">
               Relevanz für BMW Group:
             </span>{" "}
-            Fähigkeit, IT-Themen klar und verständlich zu vermitteln
-          </li>
-          <li className="mb-2 sm:mb-3 lg:mb-4">
-            <span className="text-neutral-700 dark:text-neutral-200 font-bold">
-              Motivation:
-            </span>{" "}
-            Leidenschaft für Wissensvermittlung und Schaffung leicht
-            zugänglicher Plattformen
+            Fähigkeit, komplexe IT-Themen verständlich zu kommunizieren und an die Bedürfnisse von IT- und Nicht-IT-Anwendern anzupassen, dabei kreative Lösungen zu entwickeln und kontinuierlich durch Selbstweiterentwicklung zu optimieren.
           </li>
           <li className="mb-2 sm:mb-3 lg:mb-4">
             <span className="text-neutral-700 dark:text-neutral-200 font-bold">
               Technologien:
             </span>{" "}
-            Next.js, React, TypeScript, TailwindCSS und DaisyUI
+            Obsidian MD, Quartz, CSS, TypeScript, TSX
           </li>
         </ul>
       </p>
 
-      <div className="spect-square">
-        <video
-          ref={videoRef}
-          src="2024-09-19 01-40-55.mp4"
-          className="w-full rounded-2xl mt-8"
-          controls
-          autoPlay
-        />
-      </div>
 
       <div className="carousel w-full rounded-xl mt-8">
         <div id="item1" className="carousel-item w-full">
-          <video
-            src="2024-09-19 02-04-43.mp4"
+          <img
+            src="Studying made easier. Screenshot (2).svg"
             className="w-full"
-            controls
-            autoPlay
-            ref={videoRef}
           />
         </div>
         <div id="item2" className="carousel-item w-full">
           <img
-            src="hustle-swt.vercel.app_(HighRes Screenshot)(1).png"
+            src="Datenbanksysteme (DBS) Screenshot.svg"
+            
             className="w-full"
           />
         </div>
         <div id="item3" className="carousel-item w-full">
           <img
-            src="hustle-swt.vercel.app_(HighRes Screenshot) (2).png"
+            src="RNVS-Blatt-06 Screenshot.svg"
             className="w-full"
           />
         </div>
         <div id="item4" className="carousel-item w-full">
           <img
-            src="hustle-swt.vercel.app_(HighRes Screenshot) (3).png"
+            src="RNVS-Blatt-00 Screenshot.svg"
             className="w-full"
           />
-        </div>
-        <div id="item5" className="carousel-item w-full">
-          <img
-            src="hustle-swt.vercel.app_(HighRes Screenshot).png"
-            className="w-full"
-          />{" "}
         </div>
       </div>
       <div className="flex w-full justify-center gap-2 py-2">
@@ -318,13 +311,141 @@ const MyUniNotes = () => {
         <a href="#item4" className="btn btn-xs">
           4
         </a>
-        <a href="#item5" className="btn btn-xs">
-          5
-        </a>
       </div>
     </div>
   );
 };
+
+const Powerpoint = () => {
+  const videoRef = useRef<HTMLVideoElement>(null); // Neues Ref für Video
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.playbackRate = 2; // Setze Wiedergabegeschwindigkeit auf 2x
+    }
+  }, []);
+
+  return (
+    <div
+      key={"powerpoint-content"}
+      className="mb-4 rounded-3xl bg-[#F5F5F7] p-4 md:p-14 dark:bg-neutral-800 text-balance text-left"
+    >
+      <p className="mx-auto max-w-3xl font-sans text-base text-neutral-600 md:text-2xl dark:text-neutral-400">
+        <span className="font-helvetia text-neutral-700 dark:text-neutral-200">
+          Meine Seminarpräsentation über JWT:{" "}
+          <a
+            href="https://jwt-woad.vercel.app/"
+            className="text-blue-500 underline hover:text-blue-700"
+          >
+            JSON Web Tokens
+          </a>
+        </span>{" "}
+        <ul className="list-disc ml-5 sm:ml-8 lg:ml-10 font-helvetia text-pretty *:mt-2">
+  <li className="mb-2 sm:mb-3 lg:mb-4">
+    <span className="text-neutral-700 dark:text-neutral-200 font-bold">
+      Erstellung:
+    </span>{" "}
+    Diese PowerPoint-Präsentation wurde für ein Seminar im 4. Semester über JWT (JSON Web Tokens)
+    erstellt, um die Authentifizierung und Token-basierte Systeme zu erläutern.
+  </li>
+  <li className="mb-2 sm:mb-3 lg:mb-4">
+    <span className="text-neutral-700 dark:text-neutral-200 font-bold">
+      Design:
+    </span>{" "}
+    Modernes Design, anschauliche Grafiken und Animationen, die ohne überflüssigen Text
+    auskommen, um den Fokus auf die Visualisierung der technischen Konzepte zu legen.
+  </li>
+  <li className="mb-2 sm:mb-3 lg:mb-4">
+    <span className="text-neutral-700 dark:text-neutral-200 font-bold">
+      Ziel:
+    </span>{" "}
+    Komplexe Themen wie Token-basierte Authentifizierung und Sicherheitsaspekte von JWT
+    klar und verständlich zu vermitteln.
+  </li>
+  <li className="mb-2 sm:mb-3 lg:mb-4">
+    <span className="text-neutral-700 dark:text-neutral-200 font-bold">
+      Interaktivität:
+    </span>{" "}
+    Die Präsentation nutzt Animationen und Visualisierungen, um technische Prozesse wie
+    die Token-Erstellung und -Verifizierung Schritt für Schritt zu veranschaulichen.
+  </li>
+  <li className="mb-2 sm:mb-3 lg:mb-4">
+    <span className="text-neutral-700 dark:text-neutral-200 font-bold">
+      Webseite:
+    </span>{" "}
+    Um meinen Kommilitonen "Learning by Doing" für JWT zu ermöglichen, habe ich eine Webseite
+    erstellt, auf der sie JWTs selbst erzeugen, entschlüsseln und analysieren können. Zusätzlich
+    bietet die Seite die Möglichkeit, den RSA-Verschlüsselungsalgorithmus zu testen und besser
+    zu verstehen.
+  </li>
+  <li className="mb-2 sm:mb-3 lg:mb-4">
+    <span className="text-neutral-700 dark:text-neutral-200 font-bold">
+      Erfolg:
+    </span>{" "}
+    Dank des hervorragenden Vortrags und des begleitenden Papers habe ich das Seminar mit der Note 1.0 abgeschlossen. Unten finden Sie eine Auswahl von Folien aus der Präsentation.
+  </li>
+</ul>
+
+      </p>
+
+
+
+      <div className="carousel w-full rounded-xl mt-8">
+  <div id="item1" className="carousel-item w-full">
+    <img
+      src="JWT-Verifizierung.gif"
+      className="w-full"
+    />
+  </div>
+  <div id="item2" className="carousel-item w-full">
+    <img
+      src="Unsignierte-JWT.gif"
+      className="w-full"
+    />
+  </div>
+  <div id="item3" className="carousel-item w-full">
+    <img
+      src="Signierte-JWT.gif"
+      className="w-full"
+    />
+  </div>
+  <div id="item4" className="carousel-item w-full">
+    <img
+      src="TrioFolien.gif"
+      className="w-full"
+    />
+  </div>
+  <div id="item5" className="carousel-item w-full">
+    <img
+      src="JWE.gif"
+      className="w-full"
+    />
+  </div>
+</div>
+<div className="flex w-full justify-center gap-2 py-2">
+  <a href="#item1" className="btn btn-xs">
+    1
+  </a>
+  <a href="#item2" className="btn btn-xs">
+    2
+  </a>
+  <a href="#item3" className="btn btn-xs">
+    3
+  </a>
+  <a href="#item4" className="btn btn-xs">
+    4
+  </a>
+  <a href="#item5" className="btn btn-xs">
+    5
+  </a>
+</div>
+
+    </div>
+  );
+};
+
+
+
 
 const data = [
   {
@@ -340,10 +461,10 @@ const data = [
     content: <MyUniNotes />,
   },
   {
-    category: "Product",
-    title: "Launching the new Apple Vision Pro.",
-    src: "https://images.unsplash.com/photo-1713869791518-a770879e60dc?q=80&w=2333&auto=format&fit=crop&ixlib=rb-4.0.3",
-    content: <HustleSWT />,
+    category: "Weniger Text, mehr Kommunikation",
+    title: "Eine PowerPoint mit modernem Design und Animationen",
+    src: "/powerpoint.png",
+    content: <Powerpoint />,
   },
   {
     category: "Product",
