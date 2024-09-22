@@ -19,43 +19,41 @@ export default function AppleCardsCarouselDemo() {
 
   return (
     <div>
-    <HeroHighlight>
-      <motion.div
-        initial={{
-          opacity: 0,
-          y: 20,
-        }}
-        animate={{
-          opacity: 1,
-          y: [20, -5, 0],
-        }}
-        transition={{
-          duration: 0.5,
-          ease: [0.4, 0.0, 0.2, 1],
-        }}
-        className="mx-auto max-w-screen-xl px-4 text-center text-neutral-700 dark:text-white"
-      >
-        <h2 className="font-helvetia mt-10 text-xl font-bold text-neutral-800 sm:text-2xl md:text-5xl dark:text-neutral-200 select-none">
-          Warum Sie auf mich zählen können.
-        </h2>
-        <p className="mt-2 text-sm sm:text-base md:text-3xl md:mt-5 text-neutral-600 dark:text-neutral-300 select-none">
-          Meine Projekte und Erfahrungen
-        </p>
+      <HeroHighlight>
+        <motion.div
+          initial={{
+            opacity: 0,
+            y: 20,
+          }}
+          animate={{
+            opacity: 1,
+            y: [20, -5, 0],
+          }}
+          transition={{
+            duration: 0.5,
+            ease: [0.4, 0.0, 0.2, 1],
+          }}
+          className="mx-auto max-w-screen-xl px-4 text-center text-neutral-700 dark:text-white"
+        >
+          <h2 className="font-helvetia mt-10 text-xl font-bold text-neutral-800 sm:text-2xl md:text-5xl dark:text-neutral-200 select-none">
+            Warum Sie auf mich zählen können.
+          </h2>
+          <p className="mt-2 text-sm sm:text-base md:text-3xl md:mt-5 text-neutral-600 dark:text-neutral-300 select-none">
+            Meine Projekte und Erfahrungen
+          </p>
 
-        {/* Desktop Carousel */}
-        <div className="hidden md:block">
-          <Carousel items={cards} />
-        </div>
-
-        {/* Mobile Vertical List */}
-        <div className="block md:hidden">
-          <div className="flex flex-col gap-8 mt-8">
-            {cards}
+          {/* Desktop Carousel */}
+          <div className="hidden md:block">
+            <Carousel items={cards} />
           </div>
-        </div>
-      </motion.div>
-    </HeroHighlight>
-  </div>
+
+          {/* Mobile Vertical List */}
+          <div className="block md:hidden">
+            <div className="flex flex-col gap-8 mt-8">{cards}</div>
+          </div>
+        </motion.div>
+      </HeroHighlight>
+    </div>
   );
 }
 
@@ -799,7 +797,6 @@ const Ich = () => {
                 href="https://linkedin.com/in/alperen-adatepe"
                 className="text-blue-500 underline hover:text-blue-700"
                 target="_blank"
-
               >
                 linkedin.com/in/alperen-adatepe
               </a>
@@ -812,7 +809,6 @@ const Ich = () => {
                 href="https://github.com/noluyorAbi"
                 className="text-blue-500 underline hover:text-blue-700"
                 target="_blank"
-
               >
                 github.com/noluyorAbi
               </a>
